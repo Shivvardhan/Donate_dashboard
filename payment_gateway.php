@@ -37,6 +37,42 @@ if ($conn->query($sql) === TRUE) {
   }
   
 }
+
+
+
+$mode = "PROD"; //<------------ Change to TEST for test server, PROD for production
+
+extract($_POST);
+  $secretKey = "3a3a08419f85429e0ff35c096a13476b0b58d490";
+  $postData = array( 
+  "appId" => $appId, 
+  "orderId" => $orderId, 
+  "orderAmount" => $orderAmount, 
+  "orderCurrency" => $orderCurrency, 
+  "orderNote" => $orderNote, 
+  "customerName" => $customerName, 
+  "customerPhone" => $customerPhone, 
+  "customerEmail" => $customerEmail,
+  "returnUrl" => $returnUrl, 
+  "notifyUrl" => $notifyUrl,
+);
+ksort($postData);
+$signatureData = "";
+foreach ($postData as $key => $value){
+    $signatureData .= $key.$value;
+}
+$signature = hash_hmac('sha256', $signatureData, $secretKey,true);
+$signature = base64_encode($signature);
+
+if ($mode == "PROD") {
+  $url = "https://www.cashfree.com/checkout/post/submit";
+} else {
+  $url = "https://test.cashfree.com/billpay/checkout/post/submit";
+}
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
