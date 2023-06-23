@@ -101,7 +101,8 @@ if(isset($_SESSION['user'])){
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION['user'] ?></span>
+                                <span
+                                    class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION['user'] ?></span>
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg" />
                             </a>
 
@@ -127,6 +128,7 @@ if(isset($_SESSION['user'])){
                                             <th>ID</th>
                                             <th>Full Name</th>
                                             <th>Amount</th>
+                                            <th>Order Id</th>
                                             <th>Email</th>
                                             <th>Phone</th>
                                             <th>DOB</th>
@@ -156,6 +158,7 @@ if(isset($_SESSION['user'])){
                                             <td><?php echo $row["id"];?></td>
                                             <td><?php echo $row["full_name"];?></td>
                                             <td><?php echo $row["amount"];?></td>
+                                            <td><?php echo $row["o_id"];?></td>
                                             <td><?php echo $row["email"];?></td>
                                             <td><?php echo $row["phone"];?></td>
                                             <td><?php echo $row["dob"];?></td>

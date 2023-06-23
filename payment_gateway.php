@@ -11,6 +11,8 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
+if(isset($_POST['submitButton2'])){
+
 $amt = $_POST['amount'];
 $fname = $_POST['fname'];
 $dob = $_POST['dob'];
@@ -22,10 +24,10 @@ $city = $_POST['city'];
 $address = $_POST['address'];
 $pincode = $_POST['pincode'];
 $pan = $_POST['pan'];
-$eligibility = $_POST['eligibility'];
+$eligibility = $_POST['contactPermission'];
 
+echo  "new kind data" ;
 
-if(isset($_POST['submitButton2'])){
     
 
 $sql = "INSERT INTO `donate`(`amount`, `full_name`, `dob`, `email`, `phone`, `country`, `state`, `city`, `address`, `pincode`, `pan`, `eligibilty`) VALUES ('$amt','$fname','$dob','$email','$phone','$country','$state','$city','$address','$pincode','$pan','$eligibility')";

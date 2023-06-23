@@ -266,7 +266,7 @@ $amount = $_POST['dn_Amount'];
     <div class="row row-centered" style="margin-bottom:60px;">
         <div class="col col-sm-11 col-md-5 col-lg-5 col-xl-5 col-centered" style="background-color:#F5F5F5;">
             <div class="dash_Sec" style="padding:50px;">
-                <form action="payment_gateway.php" method="POST">
+                <form action="checkout/start.php" method="POST">
                     <div style="display:flex; gap:25px;">
                         <div class="input-group mb-3">
                             <input type="text" style="height:50px;" class="form-control" placeholder="Enter Full Name"
@@ -365,8 +365,11 @@ $amount = $_POST['dn_Amount'];
                             "YOUR CONTRIBUTIONS ARE ELIGIBLE FOR UPTO 50% TAX BENEFIT UNDER SECTION 80G"
                         </span>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="eligibility" value="eligible"
-                                id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" name="eligibility" id="flexCheckDefault">
+                            <!-- Hidden input field to store the value -->
+                            <input type="hidden" name="contactPermission" id="contactPermission" value="not eligible">
+
+
                             <span style="color: #cdc2c2;font-size:14px;" class="form-check-label"
                                 for="flexCheckDefault">
                                 You agree that Boonary Foundation can reach out to you through Whatsapp/email/SMS/Phone
@@ -515,6 +518,19 @@ $amount = $_POST['dn_Amount'];
         <!-- Footer -->
 
 </body>
+
+<script>
+var checkbox = document.getElementById("flexCheckDefault");
+var hiddenInput = document.getElementById("contactPermission");
+
+checkbox.addEventListener("change", function() {
+    if (checkbox.checked) {
+        hiddenInput.value = "eligible"; // Set value to 1 when checkbox is checked
+    } else {
+        hiddenInput.value = "not eligible"; // Set value to 0 when checkbox is not checked
+    }
+});
+</script>
 <script>
 function redirectToPage() {
     // Redirect to the desired page
