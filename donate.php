@@ -171,12 +171,55 @@
         margin-right: 0.25rem;
         margin-bottom: 0.25rem;
     }
+
+    .nav-res {
+        padding: 0 150px;
+    }
+
+    /* Extra small devices (phones, 576px and down) */
+    @media (max-width: 576px) {
+
+        /* CSS rules for extra small devices */
+        .nav-res {
+            padding: 0 10px;
+        }
+    }
+
+    .res {
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+        margin-bottom: 30px !important;
+    }
+
+    /* Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) {
+
+        /* CSS rules for small devices */
+        .nav-res {
+            padding: 0 20px;
+        }
+    }
+
+    .res {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        margin-bottom: 40px !important;
+    }
+
+    /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+
+        /* CSS rules for medium devices */
+        .nav-res {
+            padding: 0 150px;
+        }
+    }
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid d-flex align-items-center" style="padding:0 200px;">
+        <div class="container-fluid d-flex align-items-center nav-res res">
             <a href="https://boonaryfoundation.com/"><img src="logo.png" style="height:50px;" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -227,8 +270,44 @@
         </div>
     </nav>
 
+    <span class="overlay-top-header" style="background-color:rgba(0, 0, 0, 0.5);opacity:1;">
+        <div class="top_site_main" style="color: rgb(255, 255, 255); background-image: url('DONATION-01-scaled.jpg'); padding-top: 25%;background-repeat: no-repeat;
+  background-size: contain; ">
+        </div>
+    </span>
+
     <div class="row row-centered " style="margin-bottom:60px;">
-        <div class="col col-centered">
+        <div class="col-sm-11 col-md-5 col-lg-5 col-xl-5 res">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-aeb1eed elementor-widget thim-ekits-heading elementor-widget-thim-heading"
+                    data-id="aeb1eed" data-element_type="widget" data-widget_type="thim-heading.default">
+                    <div class="elementor-widget-container">
+                        <div class="sc_heading" style="text-align:left">
+                            <h3 class="title" style="font-size:24px;font-family: Roboto Slab;font-weight:700">Donate
+                                <span class="thim-color" style="color:#FFB606">Text</span>
+                            </h3>
+                            <div class="sub-heading" style="color:#999999;font-size:17px;">
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+                                    in a piece of classical Latin literature from 45 BC, making it over 2000 years
+                                    old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+                                    Virginia, looked up one of the more obscure Latin words, consectetur, from a
+                                    Lorem Ipsum passage, and going through the cites of the word in classical
+                                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections
+                                    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
+                                    Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
+                                    ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
+                                    "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for
+                                    those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
+                                    Malorum" by Cicero are also reproduced in their exact original form, accompanied
+                                    by English versions from the 1914 translation by H. Rackham.</p>
+                            </div><span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-11 col-md-5 col-lg-5 col-xl-5">
             <div class="green_Head">
                 <h1 class="txt_Head">EDUCATE A CHILD TODAY!</h1>
             </div>
