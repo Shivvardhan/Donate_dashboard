@@ -12,7 +12,8 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-
+session_start();
+if(isset($_SESSION['user'])){
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,7 +68,7 @@ if ($conn->connect_error) {
             <hr class="sidebar-divider" style="margin-bottom:5px;" />
 
             <li class="nav-item">
-                <a class="nav-link" href="dashboard.php">
+                <a class="nav-link" href="../logout.php">
                     <i class="fas fa-sign-out-alt"></i>
                     <span>Log Out</span></a>
             </li>
@@ -222,3 +223,10 @@ if ($conn->connect_error) {
 </body>
 
 </html>
+
+<?php } 
+else {
+
+    header("Location: ../index.php");
+    exit();
+}?>

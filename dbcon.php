@@ -2,7 +2,7 @@
 $servername = "localhost";
 $dbuser = "root";
 $dbpassword = "";
-$dbname = "donate";
+$dbname = "sanju";
 
 
 // Create connection
