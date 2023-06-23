@@ -1,9 +1,5 @@
 <?php
-session_start();
 
-if (isset($_SESSION['username'])) {
-  echo "<script>window.location.href = 'public/'; </script>";
-} else {
   include "head.php";
 ?>
 
@@ -77,4 +73,3 @@ if (isset($_SESSION['username'])) {
 </html>
 
 
-<?php } ?>
