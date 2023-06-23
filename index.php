@@ -41,7 +41,7 @@
                     <?PHP }
                     ?>
 
-                    <h2 class="text-center text-dark ">KANHAIYALAL VINODKUMARI MEMORIAL EYE HOSPITAL</h2>
+                    <h2 class="text-center text-dark ">BOONARY FOUNDATION</h2>
 
                     <div class="text-center">
                         <img src="login.png" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
@@ -58,9 +58,9 @@
                     </div>
                     <div class="text-center"><button type="submit" name="submit"
                             class="btn btn-color px-5 mb-5 w-100">Login</button></div>
-                    <div id="emailHelp" class="form-text text-center mb-5 text-dark">Forgot Password? <a
+                    <!-- <div id="emailHelp" class="form-text text-center mb-5 text-dark">Forgot Password? <a
                             href="forgotpass.php" class="text-dark fw-bold"> Request Your Password.</a>
-                    </div>
+                    </div> -->
                 </form>
 
             </div>
@@ -71,5 +71,3 @@
 </body>
 
 </html>
-
-

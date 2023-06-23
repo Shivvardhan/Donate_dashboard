@@ -64,7 +64,13 @@ if ($conn->connect_error) {
             </li>
 
             <!-- Divider -->
-            <hr class="sidebar-divider" />
+            <hr class="sidebar-divider" style="margin-bottom:5px;" />
+
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard.php">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Log Out</span></a>
+            </li>
 
 
         </ul>

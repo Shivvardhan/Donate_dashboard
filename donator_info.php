@@ -92,12 +92,12 @@ $amount = $_POST['dn_Amount'];
     .button_dn {
         font-family: var(--bs-font-sans-serif);
         font-weight: 700;
-        background: #ffed00;
+        background: #26007B;
         letter-spacing: 1px;
         border: none;
         padding: 8px 60px;
         border-radius: 30px;
-        color: #010101;
+        color: #fff;
         position: relative;
         overflow: hidden;
         z-index: 1;
@@ -111,12 +111,12 @@ $amount = $_POST['dn_Amount'];
     }
 
     .slide_down:hover {
-        box-shadow: inset 0 100px 0 0 #76C04E;
+        box-shadow: inset 0 100px 0 0 #26007B;
     }
 
     .form-control,
     .form-select {
-        border: 1px solid #FFED00 !important;
+        border: 1px solid #26007B !important;
     }
 
     .input-group-text {
@@ -258,7 +258,7 @@ $amount = $_POST['dn_Amount'];
 
                         <div style="display:flex;gap:25px;justify-content: center;margin-top:25px;">
                             <button style="width:40%;height:40px;" type="button" onclick="redirectToPage()"
-                                class="btn btn-outline-warning">Back</button>
+                                class="btn btn-outline-primary">Back</button>
                             <button class="button_dn button_slide slide_down" id="submitButton2" name="submitButton2"
                                 type="submit">SUBMIT
                             </button>
