@@ -138,8 +138,38 @@
     button.test-btn:hover {
         cursor: pointer;
         transform: scale(1.25);
-        background: #26007B;
         color: #fff;
+    }
+
+    @charset "UTF-8";
+
+    .svg-inline--fa {
+        vertical-align: -0.200em;
+    }
+
+    .rounded-social-buttons {
+        text-align: left;
+        margin-left: -15px;
+    }
+
+    .rounded-social-buttons .social-button {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        width: 3.125rem;
+        height: 3.125rem;
+        border: 0.125rem solid transparent;
+        padding: 0;
+        text-decoration: none;
+        text-align: center;
+        color: #fefefe;
+        font-size: 1.5625rem;
+        font-weight: normal;
+        line-height: 2em;
+        border-radius: 1.6875rem;
+        transition: all 0.5s ease;
+        margin-right: 0.25rem;
+        margin-bottom: 0.25rem;
     }
     </style>
 </head>
@@ -147,7 +177,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid d-flex align-items-center" style="padding:0 200px;">
-            <img src="logo.png" style="height:50px;" alt="">
+            <a href="https://boonaryfoundation.com/"><img src="logo.png" style="height:50px;" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -240,7 +270,7 @@
         </div>
     </div>
     <!-- Remove the container if you want to extend the Footer to full width. -->
-    <div class="container-fluid " style="padding:0;background-color:#26007B;">
+    <div class="container-fluid " style="padding:0;background-color:#0D195C;">
 
         <!-- Footer -->
         <footer class="text-center text-lg-start text-white">
@@ -251,15 +281,62 @@
                     <!-- Grid row -->
                     <div class="row mt-3">
                         <!-- Grid column -->
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mb-4">
                             <!-- Content -->
-                            <h6 class="text-uppercase fw-bold">Company name</h6>
-                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <h2 class="fw-bold">Boonary Foundation
+                            </h2>
+                            <hr class="mb-4 mt-0 d-inline-block" style="width: 310px; background: white; height: 2px" />
+
+                            <p><i class="fas fa-phone mr-3" style="font-size:20px;color:#FFB606;"></i> <a
+                                    style="text-decoration:none;font-size:20px;margin-left:5px;color:#fff;"
+                                    href="tel:0731-4380559">
+                                    0731-4380559</a>
+                            </p>
+                            <p><i class="fas fa-envelope mr-3" style="font-size:20px;color:#FFB606;"></i> <a
+                                    style="text-decoration:none;font-size:20px;margin-left:5px;color:#fff;"
+                                    href="mailto: info@boonaryfoundation.com">
+                                    info@boonaryfoundation.com</a></p>
+                            <p><i class="fas fa-location-dot mr-3" style="font-size:20px;color:#FFB606;"></i><span
+                                    style="font-size:20px;margin-left:5px;color:#fff;">Press Complex, Indore, Madhya
+                                    Pradesh 452011</span></p>
+                            <p><i class="fas fa-clock mr-3" style="font-size:20px;color:#FFB606;"></i><span
+                                    style="font-size:20px;margin-left:5px;color:#fff;">OFFICE
+                                    TIME:- 10:00AM TO
+                                    5:30PM</span>
+                            </p>
+
+                            <div class="rounded-social-buttons">
+                                <a class="social-button instagram" href="https://www.instagram.com/boonaryfoundation/"
+                                    target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="social-button facebook"
+                                    href="https://www.facebook.com/profile.php?id=100088898893731&sk=photos"
+                                    target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="social-button youtube" href="https://www.youtube.com/@boonaryfoundation"
+                                    target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a class="social-button twitter" href="https://twitter.com/Boonary_NGO"
+                                    target="_blank"><i class="fab fa-twitter"></i></a>
+                            </div>
+
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h3 class=" fw-bold mb-4" style="font-size:30px;">Company</h3>
+
                             <p>
-                                Here you can use rows and columns to organize your footer
-                                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit.
+                                <a href="https://boonaryfoundation.com/about-us/" class="text-white"
+                                    style="text-decoration:none;font-size:20px;font-weight:400">About</a>
+                            </p>
+                            <p>
+                                <a href="https://boonaryfoundation.com/media/" class="text-white"
+                                    style="text-decoration:none;font-size:20px;font-weight:400">Media</a>
+                            </p>
+                            <p>
+                                <a href="https://boonaryfoundation.com/contact-us/" class="text-white"
+                                    style="text-decoration:none;font-size:20px;font-weight:400">Contact</a>
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -267,55 +344,42 @@
                         <!-- Grid column -->
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                             <!-- Links -->
-                            <h6 class="text-uppercase fw-bold">Products</h6>
-                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <h3 class=" fw-bold mb-4" style="font-size:30px;">Links</h3>
+
                             <p>
-                                <a href="#!" class="text-white">MDBootstrap</a>
+                                <a href="https://boonaryfoundation.com/courses-isl/" class="text-white"
+                                    style="text-decoration:none;font-size:20px;font-weight:400">Courses</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-white">MDWordPress</a>
+                                <a href="https://boonaryfoundation.com/gallery/" class="text-white"
+                                    style="text-decoration:none;font-size:20px;font-weight:400">Gallery</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-white">BrandFlow</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-white">Bootstrap Angular</a>
+                                <a href="https://boonaryfoundation.com/get-involved/" class="text-white"
+                                    style="text-decoration:none;font-size:20px;font-weight:400">Get involved</a>
                             </p>
                         </div>
                         <!-- Grid column -->
 
                         <!-- Grid column -->
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
                             <!-- Links -->
-                            <h6 class="text-uppercase fw-bold">Useful links</h6>
-                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                                style="width: 60px; background-color: #7c4dff; height: 2px" />
-                            <p>
-                                <a href="#!" class="text-white">Your Account</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-white">Become an Affiliate</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-white">Shipping Rates</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-white">Help</a>
-                            </p>
-                        </div>
-                        <!-- Grid column -->
+                            <h3 class=" fw-bold mb-4" style="font-size:30px;">Support</h3>
 
-                        <!-- Grid column -->
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold">Contact</h6>
-                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                                style="width: 60px; background-color: #7c4dff; height: 2px" />
-                            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                            <p>
+                                <a href="#" class="text-white"
+                                    style="text-decoration:none;font-size:20px;font-weight:400">Privacy</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-white"
+                                    style="text-decoration:none;font-size:20px;font-weight:400">Terms</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-white"
+                                    style="text-decoration:none;font-size:20px;font-weight:400">FAQs</a>
+                            </p>
+
+
                         </div>
                         <!-- Grid column -->
                     </div>
@@ -325,9 +389,8 @@
             <!-- Section: Links  -->
 
             <!-- Copyright -->
-            <div class="text-center" style="background-color: #26007B;padding-bottom:50px;">
-                © 2020 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            <div class="text-center" style="background-color: #0D195C;padding-bottom:50px;font-size:20px;">
+                Copyright © 2023 Boonary Foundation, All Rights Reserved.
             </div>
             <!-- Copyright -->
         </footer>
