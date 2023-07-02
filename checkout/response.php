@@ -26,28 +26,6 @@
 		 $hash_hmac = hash_hmac('sha256', $data, $secretkey, true) ;
 		 $computedSignature = base64_encode($hash_hmac);
 
-		 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "sanju";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-$sql1 = "UPDATE `donate` SET `Status`='$txStatus' WHERE o_id='$orderId'";
-
-if ($conn->query($sql1) === TRUE) {
-	echo "Record updated successfully";
-  } else {
-	echo "Error updating record: " . $conn->error;
-  }
-  
-  $conn->close();
-
 
 		 
 		 if ($signature == $computedSignature) {

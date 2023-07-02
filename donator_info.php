@@ -144,6 +144,7 @@ $amount = $_POST['dn_Amount'];
         color: #fff;
     }
 
+
     @charset "UTF-8";
 
     .svg-inline--fa {
@@ -166,12 +167,12 @@ $amount = $_POST['dn_Amount'];
         text-decoration: none;
         text-align: center;
         color: #fefefe;
-        font-size: 1.5625rem;
+        font-size: 1.3rem;
         font-weight: normal;
         line-height: 2em;
         border-radius: 1.6875rem;
         transition: all 0.5s ease;
-        margin-right: 0.25rem;
+        margin-right: 0.1rem;
         margin-bottom: 0.25rem;
     }
 
@@ -186,6 +187,28 @@ $amount = $_POST['dn_Amount'];
         .nav-res {
             padding: 0 10px;
         }
+
+        .top-bar {
+            display: none !important;
+        }
+
+        .bar2 {
+            display: flex !important;
+        }
+
+        .goog-te-combo {
+            height: 10px;
+            width: 40px;
+            border-radius: 10px;
+        }
+
+        .footer {
+            margin-left: 0px !important;
+        }
+    }
+
+    .res {
+        margin-bottom: 20px !important;
     }
 
     /* Small devices (landscape phones, 576px and up) */
@@ -195,6 +218,15 @@ $amount = $_POST['dn_Amount'];
         .nav-res {
             padding: 0 20px;
         }
+
+        .footer {
+            margin-left: 12% !important;
+        }
+
+    }
+
+    .res {
+        margin-bottom: 20px !important;
     }
 
     /* Medium devices (tablets, 768px and up) */
@@ -204,21 +236,119 @@ $amount = $_POST['dn_Amount'];
         .nav-res {
             padding: 0 150px;
         }
+
+
+
+    }
+
+    .top-bar {
+        background-color: #26007B;
+        height: 60px;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .bar2 {
+        background-color: #26007B;
+        height: 60px;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: none;
+    }
+
+
+    .footer {
+        margin-left: 12%;
+    }
+
+    .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+        color: white !important;
+    }
+
+    .goog-te-gadget {
+        color: white !important;
+    }
+
+    .goog-te-combo {
+        height: 30px;
+        width: 150px;
+        border-radius: 10px;
+    }
+
+    .login_txt {
+        color: #FFF;
+        text-decoration: none !important;
+    }
+
+    .login_txt:hover {
+        color: #FFB606;
+        text-decoration: underline !important;
     }
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width:100wh">
-        <div class="container-fluid d-flex align-items-center nav-res">
-            <a href="https://boonaryfoundation.com/"><img src="logo.png" style="height:50px;" alt=""></a>
+    <div class="top-bar nav-res container-fluid d-flex align-items-center">
+        <div id="google_translate_element"></div>
+        <div class="col-sm-12 col-md-5 d-flex" style="margin-left:30%;gap:25px;margin-top:1%;">
+            <p><i class="fas fa-phone mr-3" style="font-size:20px;color:#FFF;"></i> <a
+                    style="text-decoration:none;font-size:20px;margin-left:5px;color:#fff;" href="tel:0731-4380559">
+                    0731-4380559</a>
+            </p>
+            <p><i class="fas fa-envelope mr-3" style="font-size:20px;color:#FFF;"></i> <a
+                    style="text-decoration:none;font-size:20px;margin-left:5px;color:#fff;"
+                    href="mailto: info@boonaryfoundation.com">
+                    info@boonaryfoundation.com</a></p>
+        </div>
+        <div class="d-flex  " style="margin-left:10%;gap:10px;">
+
+            <h5>
+                <a class="login_txt" href="https://boonaryfoundation.com/login/">Login</a>
+            </h5>
+
+            <h5>
+                <a class="login_txt" href="https://boonaryfoundation.com/register/">Register</a>
+            </h5>
+
+        </div>
+    </div>
+    <div class="bar2 nav-res container-fluid  align-items-center">
+        <div class="d-flex" style="margin-left:5%;gap:10px;">
+
+            <h5>
+                <a class="login_txt" href="https://boonaryfoundation.com/login/">Login</a>
+            </h5>
+
+            <h5>
+                <a class="login_txt" href="https://boonaryfoundation.com/register/">Register</a>
+            </h5>
+
+        </div>
+        <div class="d-flex" style="margin-left:25%;gap:25px;margin-top:1%;">
+            <p><i class="fas fa-phone mr-3" style="font-size:20px;color:#FFF;"></i> <a
+                    style="text-decoration:none;font-size:20px;margin-left:5px;color:#fff;" href="tel:0731-4380559">
+                </a>
+            </p>
+            <p><i class="fas fa-envelope mr-3" style="font-size:20px;color:#FFF;"></i> <a
+                    style="text-decoration:none;font-size:20px;margin-left:5px;color:#fff;"
+                    href="mailto: info@boonaryfoundation.com">
+                </a></p>
+        </div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid d-flex align-items-center nav-res res">
+            <a href="https://boonaryfoundation.com/"><img src="logo.png" style="height:70px;" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
+
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" style="margin-top:15px;" sid="navbarSupportedContent">
+            <div class="collapse navbar-collapse" style="margin-top:15px;" id="navbarSupportedContent">
 
 
 
@@ -246,10 +376,6 @@ $amount = $_POST['dn_Amount'];
 
                     <li class="nav-item" style="margin-right:10px;">
                         <a style="font-weight:600;" class="nav-link" href="#">CONTACT US</a>
-                    </li>
-
-                    <li class="nav-item" style="margin-right:20px;">
-                        <a style="font-weight:600;" class="nav-link" href="#">ABOUT US</a>
                     </li>
 
                     <li class="nav-item">
@@ -397,16 +523,17 @@ $amount = $_POST['dn_Amount'];
         <footer class="text-center text-lg-start text-white">
 
             <!-- Section: Links  -->
-            <section style="padding-top:70px;">
-                <div class="container text-center text-md-start mt-5">
+            <section style="padding-top:30px;">
+                <div class="container footer text-center text-md-start mt-5">
                     <!-- Grid row -->
                     <div class="row mt-3">
                         <!-- Grid column -->
                         <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mb-4">
                             <!-- Content -->
-                            <h2 class="fw-bold">Boonary Foundation
+                            <h2 class="fw-bold" style="font-family:Roboto Slab;font-weight:800;font-size:40px;">Boonary
+                                Foundation
                             </h2>
-                            <hr class="mb-4 mt-0 d-inline-block" style="width: 310px; background: white; height: 2px" />
+                            <hr class="mb-4 mt-0 d-inline-block" style="width: 350px; background: white; height: 2px" />
 
                             <p><i class="fas fa-phone mr-3" style="font-size:20px;color:#FFB606;"></i> <a
                                     style="text-decoration:none;font-size:20px;margin-left:5px;color:#fff;"
@@ -426,7 +553,7 @@ $amount = $_POST['dn_Amount'];
                                     5:30PM</span>
                             </p>
 
-                            <div class="rounded-social-buttons">
+                            <div class="rounded-social-buttons mt-5">
                                 <a class="social-button instagram" href="https://www.instagram.com/boonaryfoundation/"
                                     target="_blank"><i class="fab fa-instagram"></i></a>
                                 <a class="social-button facebook"
@@ -445,7 +572,8 @@ $amount = $_POST['dn_Amount'];
                         <!-- Grid column -->
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                             <!-- Links -->
-                            <h3 class=" fw-bold mb-4" style="font-size:30px;">Company</h3>
+                            <h3 class=" fw-bold" style="font-size:30px;font-family:Roboto Slab;margin-bottom:40px;">
+                                Company</h3>
 
                             <p>
                                 <a href="https://boonaryfoundation.com/about-us/" class="text-white"
@@ -465,11 +593,12 @@ $amount = $_POST['dn_Amount'];
                         <!-- Grid column -->
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                             <!-- Links -->
-                            <h3 class=" fw-bold mb-4" style="font-size:30px;">Links</h3>
+                            <h3 class=" fw-bold" style="font-size:30px;font-family:Roboto Slab;margin-bottom:40px;">
+                                Links</h3>
 
                             <p>
                                 <a href="https://boonaryfoundation.com/courses-isl/" class="text-white"
-                                    style="text-decoration:none;font-size:20px;font-weight:400">Courses</a>
+                                    style="text-decoration:none;font-size:20px;font-weight:400;">Courses</a>
                             </p>
                             <p>
                                 <a href="https://boonaryfoundation.com/gallery/" class="text-white"
@@ -485,7 +614,8 @@ $amount = $_POST['dn_Amount'];
                         <!-- Grid column -->
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
                             <!-- Links -->
-                            <h3 class=" fw-bold mb-4" style="font-size:30px;">Support</h3>
+                            <h3 class=" fw-bold" style="font-size:30px;font-family:Roboto Slab;margin-bottom:40px;">
+                                Support</h3>
 
                             <p>
                                 <a href="#" class="text-white"
@@ -517,6 +647,8 @@ $amount = $_POST['dn_Amount'];
         </footer>
         <!-- Footer -->
 
+        <!-- End of .container -->
+
 </body>
 
 <script>
@@ -530,6 +662,17 @@ checkbox.addEventListener("change", function() {
         hiddenInput.value = "not eligible"; // Set value to 0 when checkbox is not checked
     }
 });
+</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en'
+    }, 'google_translate_element');
+}
+</script>
+
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
 </script>
 <script>
 function redirectToPage() {

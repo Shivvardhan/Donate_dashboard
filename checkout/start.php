@@ -96,11 +96,11 @@ if ($conn->query($sql) === TRUE) {
             <div class="form-group">
                 <label>Order Id:</label><br>
                 <input class="form-control" name="orderId" value="<?php echo $oid;?>"
-                    placeholder="Enter Order ID here (Ex. order00001)" />
+                    placeholder="Enter Order ID here (Ex. order00001)" readonly />
             </div>
             <div class="form-group">
                 <label>Order Amount:</label><br>
-                <input class="form-control" name="orderAmount" value="<?php echo $amt?>" />
+                <input class="form-control" name="orderAmount" value="<?php echo $amt?>" readonly />
             </div>
             <div class="form-group">
                 <label>Order Currency:</label><br>
