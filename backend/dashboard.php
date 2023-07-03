@@ -26,7 +26,7 @@ if(isset($_SESSION['user'])){
     <meta name="author" content="" />
 
     <title>Boonary - Dashboard</title>
-
+    <link rel="icon" href="output.png" type="image/x-icon">
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
     <link

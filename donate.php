@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="output.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -222,7 +223,7 @@
         }
 
         .footer {
-            margin-left: 12% !important;
+            margin-left: 5% !important;
         }
 
     }
@@ -232,15 +233,22 @@
     }
 
     /* Medium devices (tablets, 768px and up) */
-    @media (min-width: 768px) {
+    @media (min-width: 768px) && (max-width:1030px) {
 
         /* CSS rules for medium devices */
         .nav-res {
-            padding: 0 150px;
+            padding: 0 100px !important;
+        }
+
+        .mid-col {
+            margin-left: 15% !important;
         }
 
 
+    }
 
+    .nav-res {
+        padding: 0 150px;
     }
 
     .top-bar {
@@ -262,7 +270,7 @@
 
 
     .footer {
-        margin-left: 12%;
+        margin-left: 10%;
     }
 
     .VIpgJd-ZVi9od-l4eHX-hSRGPd {
@@ -295,17 +303,17 @@
 <body>
     <div class="top-bar nav-res container-fluid d-flex align-items-center">
         <div id="google_translate_element"></div>
-        <div class="col-sm-12 col-md-5 d-flex" style="margin-left:30%;gap:25px;margin-top:1%;">
-            <p><i class="fas fa-phone mr-3" style="font-size:20px;color:#FFF;"></i> <a
+        <div class="col-sm-12 col-md-7 d-flex mid-col" style="margin-left :25%;gap:25px;margin-top:1%;">
+            <p><i class="fas fa-phone mr-3" style="font-size:18px;color:#FFF;"></i> <a
                     style="text-decoration:none;font-size:20px;margin-left:5px;color:#fff;" href="tel:0731-4380559">
                     0731-4380559</a>
             </p>
             <p><i class="fas fa-envelope mr-3" style="font-size:20px;color:#FFF;"></i> <a
-                    style="text-decoration:none;font-size:20px;margin-left:5px;color:#fff;"
+                    style="text-decoration:none;font-size:18px;margin-left:5px;color:#fff;"
                     href="mailto: info@boonaryfoundation.com">
                     info@boonaryfoundation.com</a></p>
         </div>
-        <div class="d-flex  " style="margin-left:10%;gap:10px;">
+        <div class="d-flex" style="gap:10px;">
 
             <h5>
                 <a class="login_txt" href="https://boonaryfoundation.com/login/">Login</a>
