@@ -237,11 +237,11 @@
 
         /* CSS rules for medium devices */
         .nav-res {
-            padding: 0 100px !important;
+            padding: 0 80px !important;
         }
 
         .mid-col {
-            margin-left: 15% !important;
+            margin-left: 5% !important;
         }
 
 

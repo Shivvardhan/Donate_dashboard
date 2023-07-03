@@ -393,7 +393,7 @@ $amount = $_POST['dn_Amount'];
     <div class="row row-centered" style="margin-bottom:60px;">
         <div class="col col-sm-11 col-md-5 col-lg-5 col-xl-5 col-centered" style="background-color:#F5F5F5;">
             <div class="dash_Sec" style="padding:50px;">
-                <form action="checkout/start.php" method="POST">
+                <form action="Pay/index.php" method="POST">
                     <div style="display:flex; gap:25px;">
                         <div class="input-group mb-3">
                             <input type="text" style="height:50px;" class="form-control" placeholder="Enter Full Name"

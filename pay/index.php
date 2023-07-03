@@ -1,4 +1,59 @@
 <?php
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "sanju";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+
+if(isset($_POST['submitButton2'])){
+
+function generateOrderID($length = 8) {
+  $characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  $orderId = '';
+
+  $characterCount = strlen($characters);
+  for ($i = 0; $i < $length; $i++) {
+      $randomCharacter = $characters[rand(0, $characterCount - 1)];
+      $orderId .= $randomCharacter;
+  }
+
+  return $orderId;
+}
+
+$oid = generateOrderID();
+
+
+$amt = $_POST['amount'];
+$fname = $_POST['fname'];
+$dob = $_POST['dob'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$country = $_POST['country'];
+$state = $_POST['state']; 
+$city = $_POST['city'];
+$address = $_POST['address'];
+$pincode = $_POST['pincode'];
+$pan = $_POST['pan'];
+// $eligibility = $_POST['eligibility'];
+$eligibility = $_POST['contactPermission'];
+
+
+    
+
+$sql = "INSERT INTO `donate`(`amount`, `full_name`, `dob`, `email`, `phone`, `country`, `state`, `city`, `address`, `pincode`, `pan`, `eligibilty`,`o_id`) VALUES ('$amt','$fname','$dob','$email','$phone','$country','$state','$city','$address','$pincode','$pan','$eligibility','$oid')";
+
+if ($conn->query($sql) === TRUE) {
+    
+
+?><?php
 $api_key = 'rzp_test_nRUCpBxtiAUmco';
 $api_secret = '1xFc5ei1s3RMouHTYPUirakP';
 
@@ -42,38 +97,7 @@ $formHtml = '
                                 <label for="amount">Amount (INR)</label>
                                 <input type="text" class="form-control" id="amount" name="amount" value="' . $order->amount . '" readonly>
                             </div>
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="dob">dob</label>
-                                <input type="date" class="form-control" id="dob" name="dob" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="address">Address</label>
-                                <input type="text" class="form-control" id="address" name="address" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="city">city</label>
-                                <input type="text" class="form-control" id="city" name="city" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="state">state</label>
-                                <input type="text" class="form-control" id="state" name="state" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="pincode">pincode</label>
-                                <input type="number" class="form-control" id="pincode" name="pincode" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="mobile">Mobile Number</label>
-                                <input type="tel" class="form-control" id="mobile" name="mobile" required>
-                            </div>
+                           
                             <button type="submit" class="btn btn-primary">Pay with Razorpay</button>
                         </form>
                     </div>
@@ -86,3 +110,10 @@ $formHtml = '
 ';
 echo $formHtml;
 ?>
+
+<?php 
+  } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+  }
+  
+}?>
