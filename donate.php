@@ -233,7 +233,7 @@
     }
 
     /* Medium devices (tablets, 768px and up) */
-    @media (min-width: 768px) && (max-width:1030px) {
+    @media (min-width: 768px) and (max-width:1030px) {
 
         /* CSS rules for medium devices */
         .nav-res {

@@ -1,0 +1,3 @@
+[submodule "Razor-Pay"]
+	path = Razor-Pay
+	url = https://github.com/kanha-d/Razor-Pay.git
