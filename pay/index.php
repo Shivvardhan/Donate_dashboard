@@ -41,7 +41,7 @@ if (isset($_POST['submitButton2'])) {
     $address = $_POST['address'];
     $pincode = $_POST['pincode'];
     $pan = $_POST['pan'];
-    $eligibilty = "eligible";
+    $eligibilty = $_POST['contactPermission'];
 
     $sql = "INSERT INTO `donate`(`amount`, `full_name`, `dob`, `email`, `phone`, `country`, `state`, `city`, `address`, `pincode`, `pan`, `eligibilty`, `o_id`) VALUES ('$amt','$fname','$dob','$email','$phone','$country','$state','$city','$address','$pincode','$pan','$eligibilty','$oid')";
 
@@ -102,6 +102,7 @@ if (isset($_POST['submitButton2'])) {
                                     <input type="text" class="form-control" id="amount" name="amount" value="' . $amt . '" readonly>
                                 </div>
                                 <input type="hidden" name="order_id" value="' . $order->id . '">
+                                <input type="hidden" name="o_id" value="' . $oid . '">
                                 <script src="https://checkout.razorpay.com/v1/checkout.js"
                                         data-key="' . $api_key . '"
                                         data-amount="' . $order->amount . '"
@@ -132,4 +133,3 @@ if (isset($_POST['submitButton2'])) {
     }
 }
 ?>
-
